@@ -1,8 +1,6 @@
 use rand::rngs::OsRng;
 use rand::RngCore;
-use hex;
 use hex::{encode, decode};
-use pyo3::pyfunction;
 
 
 fn prepend_nonce(vec: &mut Vec<u8>, nonce: [u32; 2]) {
