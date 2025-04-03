@@ -131,7 +131,7 @@ fn main() {
 
     let plaintext = b"Chancellor on brink of second bailout for banks";
     let plaintext: &[u8] = plaintext;
-    println!(" Plaintext: {}", encode(&plaintext));
+    println!("Plaintext:  {}", encode(&plaintext));
 
     let key: [u8; 32] = [
         0x12, 0x34, 0x56, 0x78,  0x9A, 0xBC, 0xDE, 0xF0,
@@ -146,7 +146,7 @@ fn main() {
 
     let ciphertext: &[u8] = &ciphertext;
     let plaintext = chacha20_decrypt(&key, ciphertext);
-    println!(" Plaintext: {}", encode(&plaintext));
+    println!("Plaintext:  {}", encode(&plaintext));
 
 
 }
